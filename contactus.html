@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <a class="logo" href="/">MensWear</a>
+                <div class="underline"></div>
+            </div>
+            <div class="right">
+                <a href="../index.html" class="link">Home</a>
+                <a href="../items/footwear.html">Footwear</a>
+                <a   href="../items/watch.html">Watch</a>
+                <a href="../items/wallet.html">Wallet</a>
+                <a href="../items/jewelry.html">Jewelry</a>
+                <a href="../items/contactus.html" class="active">Contact Us</a>
+                <a href="../items/gallery.html" class="link">Gallery</a>
+            </div>
+        </nav>
+    </header>
+    <div class="item-container">
+        <h1>Have any queries? Contact Us </h1><br>
+        <hr>
+        <br>
+        <div class="form">
+            <div class="left">
+                
+            </div>
+            <div class="right">
+                <form action="#" method="post" id="queryform">
+                <div class="input-field">
+                    <label for="first_name"></label>
+                    <input type="text" name="first_name" placeholder="First Name" required id="first_name">
+                </div>
+                <div class="input-field">
+                    <label for="last_name"></label>
+                    <input type="text" name="last_name" placeholder="Last Name" required id="last_name">
+                </div>
+                <div class="input-field">
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <label for="phone"></label>
+                    <input type="number" name="phone" placeholder="Phone" required>
+                </div>
+                    <textarea name="message" id="message" cols="48" rows="10" placeholder="Type your queries." required></textarea>
+                    <br>
+                    <button class="send-btn" type="submit">Send &rightarrow;</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    <footer>
+            <div class="links">
+                <a href="../index.html" class="link">Home</a>
+                <a href="../items/footwear.html" class="link">Footwear</a>
+                <a href="../items/watch.html" class="link">Watch</a>
+                <a href="../items/wallet.html" class="link">Wallet</a>
+                <a href="../items/jewelry.html" class="link">Jewelry</a>
+                <a href="../items/contactus.html" class="link active">Contact Us</a>
+                <a href="../items/gallery.html" class="link">Gallery</a>
+            </div>
+            <div class="copyright">
+                All Rights Reserverd &copy; 2023
+            </div>
+            <div class="subscribe">
+                <form action="#" method="post" id="subscribe-form">
+                <input class="subscribe-input" id="subscribe-email" type="email" name="subscribe" placeholder="Stay Updated." required>
+                <input class="subscribe-btn" type="submit" value="subscribe">
+            </form>
+            </div>
+    </footer>
+    <script>
+        form = document.getElementById('queryform')
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            full_name = document.getElementById('first_name').value + document.getElementById('last_name').value
+            alert(`Dear ${full_name}, Your form has been submitted successfully.`)
+            form.reset()
+        })
+    </script>
+    <script>
+        form = document.getElementById('subscribe-form')
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            email = document.getElementById('subscribe-email').value
+            alert(`You will recieve updates through your email ${email}`)
+            form.reset()
+        })
+    </script>
+</body>
+</html>
