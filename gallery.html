@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <a class="logo" href="/">MensWear</a>
+                <div class="underline"></div>
+            </div>
+            <div class="right">
+                <a href="../index.html" class="link">Home</a>
+                <a href="../items/footwear.html">Footwear</a>
+                <a href="../items/watch.html">Watch</a>
+                <a href="../items/wallet.html">Wallet</a>
+                <a href="../items/jewelry.html">Jewelry</a>
+                <a href="../items/contactus.html">Contact Us</a>
+                <a href="../items/contactus.html" class="active">Gallery</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="item-container">
+        <h1>MensWear Gallery: </h1><br>
+        <hr>
+
+        <div class="cards">
+            <div class="card-item">
+                <img class="card-image" src="../images/analogwatch.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/boot.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/bracelet.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/chain.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/contact.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/creditwallet.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/digitalwatch.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/dressshoes.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/longwallet.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/ring.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/shoes.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/slippers.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/smartwatch.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/sneakers.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/wallet.png" alt="" srcset="">
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="../images/watch.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="../index.html" class="link">Home</a>
+            <a href="../items/footwear.html" class="link">Footwear</a>
+            <a href="../items/watch.html" class="link">Watch</a>
+            <a href="../items/wallet.html" class="link">Wallet</a>
+            <a href="../items/jewelry.html" class="link">Jewelry</a>
+            <a href="../items/contactus.html" class="link">Contact Us</a>
+            <a href="../items/contactus.html" class="link active">Gallery</a>
+        </div>
+        <div class="copyright">
+            All Rights Reserverd &copy; 2023
+        </div>
+        <div class="subscribe">
+            <form action="#" method="post" id="subscribe-form">
+            <input class="subscribe-input" id="subscribe-email" type="email" name="subscribe" placeholder="Stay Updated." required>
+            <input class="subscribe-btn" type="submit" value="subscribe">
+        </form>
+        </div>
+</footer>
+<script>
+    form = document.getElementById('subscribe-form')
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        email = document.getElementById('subscribe-email').value
+        alert(`You will recieve updates through your email ${email}`)
+        form.reset()
+    })
+</script>
+</body>
+</html>
